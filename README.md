@@ -72,6 +72,13 @@ For this project, I am analyzing the results of an A/B test run by an e-commerce
 - Find p-value and determine if it supports the null hypothesis or rejects it in favor of the alternative hypothesis  
 - Investigate whether time, day, hour, or total ad exposures influence conversion
 
+## Conclusion
+
+- The A/B test indicates that the ad campaign significantly increased conversions.  
+- Regression results support the significance of both ad exposure and group assignment.  
+- The campaign generated measurable incremental revenue, confirming a **successful experiment**.
+
+
 **Python Implementation Example:**
 
 ```python
@@ -84,9 +91,7 @@ y = df["converted"]
 model = sm.Logit(y, X).fit()
 print(model.summary())
 
-## Conclusion
 
-- The A/B test indicates that the ad campaign significantly increased conversions.  
-- Regression results support the significance of both ad exposure and group assignment.  
-- The campaign generated measurable incremental revenue, confirming a **successful experiment**.
+
+
 
